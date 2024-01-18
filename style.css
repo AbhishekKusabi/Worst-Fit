@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color:white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+    background: rgb(204,41,157);
+    background: linear-gradient(90deg, rgba(204,41,157,1) 0%, rgba(230,140,14,1) 50%, rgba(252,139,69,1) 100%);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.container {
+    display: flex;
+    width: 80%;
+    max-height:80%;
+    background-color: rgba(0, 0, 0, 0.675);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+input:focus{
+    outline:none;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.556);
+    color: white;
+    font-size:1.2rem;
+}
+button {
+    background: #53f7a1b8;
+    cursor: pointer;
+    color:white;
+    font-size: 1.2rem;
+}
+button:hover{
+    /* background: #53f7a1; */
+    scale:1.1;
+}
+input, button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+    flex-wrap: wrap;
+    gap:.2rem;
+    /* border:1px dashed #333; */
+}
+.memory-block, .process-bar {
+    border: 1px solid #333;
+    background-color: #ddd;
+    height: 50px;
+    /* margin: 2px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:black;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.process-bar {
+    background-color: #a0c4ff;
+}
+
+.allocated-bar {
+    background-color: #4caf50;
+}
+
+.allocated-text {
+    color: white;
+}
+
+.unallocated-bar {
+    background-color: #ff9999;
+}
+.row-container{
+    max-width:90%;
+    overflow: auto;
+    max-height:200px;
+    padding:.4rem;
+    border: 1px dashed #ffffff;
+    margin-top:1rem;
+    /* background-color: red; */
+}
+.heading{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}

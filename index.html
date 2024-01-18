@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Worst-Fit Memory Allocation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Worst-Fit Memory Allocation</h1>
+        <div>
+            <label for="memory-input">Memory Blocks (comma-separated):</label>
+            <input type="text" id="memory-input" placeholder="e.g., 100,200,300,400,500" value="150,350">
+        </div>
+        <div>
+            <label for="process-input">Process Sizes (comma-separated):</label>
+            <input type="text" id="process-input" placeholder="e.g., 150,300,125,450" value="300,25,125,50">
+        </div>
+        <button onclick="allocateMemory()">Allocate Memory</button>
+        <div class="row-container"><div class="heading">Empty blocks:</div><div id="memory-row" class="row"></div></div>
+        <div class="row-container"><div class="heading">Processes:</div><div id="process-row" class="row"></div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
